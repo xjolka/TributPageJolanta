@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      body {
+        background-color: bisque;
+      }
+      p {
+        font-size: 16px;
+        font-family: Lucida Calligraphy;
+      }
+      @media (max-width: 300px) {
+        p {
+          font-size: 12px;
+        }
+      }
+      #image {
+        display: block;
+        max-width: 100%;
+        margin: 0px auto;
+      }
+
+      #title {
+        text-align: center;
+        font-family: Showcard Gothic;
+      }
+      h3 {
+        font-family: Britannic Bold;
+      }
+      ol {
+        font-family: Bahnschrift Light;
+      }
+      figcaption {
+        text-align: center;
+        font-family: Broadway;
+        font-size: 22px;
+      }
+      #box-container {
+        display: flex;
+        height: 500px;
+      }
+      #box-1 {
+        background-color: auto;
+        width: 50%;
+        height: 50%;
+      }
+
+      #box-2 {
+        background-color: auto;
+        width: 50%;
+        height: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="main">
+      <h1 id="title">
+        Leopold the Cat
+      </h1>
+      <figure id="img-div">
+        <img
+          id="image"
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Leopold_the_Cat.svg/200px-Leopold_the_Cat.svg.png"
+        />
+        <figcaption id="img-caption">
+          "Guys, let's all get along" (Russian: Ребята, давайте жить дружно)
+        </figcaption>
+      </figure>
+      <section id="tribute-info">
+        <p>
+          Leopold the Cat (Russian: Кот Леопольд, Kot Leopold) is a
+          Soviet/Russian animated short film series about a good-natured and
+          prudent cat, Leopold. Leopold always wears a bow tie even when
+          swimming. Throughout the series, he has to deal with two mischievous
+          mice, Grey and White (Mitya and Motya according to an early script
+          version, but the cartoons themselves mention no names). The animation
+          was produced at T/O Ekran in 1975 - 1987 and its runtime is 87 min (10
+          episodes). As of 1987, there were 11 episodes in total. Eventually, in
+          1995, most of the episodes were released on DVD
+        </p>
+        <p>
+          Leopold's catchphrase is "Guys, let's all get along" (Russian: Ребята,
+          давайте жить дружно). The catchphrases of the two mice are "Come out,
+          Leopold!" (Russian: Выходи, Леопольд!) by the one and "Come out, you
+          foul coward!" (Russian: Выходи, подлый трус!) by the second.
+        </p>
+        <div id="box-container">
+          <div id="box-1">
+            <img
+              id="image"
+              src="https://static.tvtropes.org/pmwiki/pub/images/leopold_the_cat.jpg"
+            />
+          </div>
+          <div id="box-2">
+            <h3>
+              Episodes:
+            </h3>
+
+            <ol>
+              <li>
+                1975 — Leopold and the Golden Fish / Леопольд и золотая рыбка
+              </li>
+              <li>1975 — Leopold Cat's Revenge / Месть кота Леопольда</li>
+              <li>1981 — Cat Leopold's Treasure / Клад кота Леопольда</li>
+              <li>1981 — Leopold's TV / Телевизор кота Леопольда</li>
+              <li>1982 — Leopold Goes for a Walk / Прогулка кота Леопольда</li>
+              <li>
+                1982 — Birthday of Leopold the Cat / День рождения кота
+                Леопольда
+              </li>
+              <li>1983 — Leopold's Summer / Лето кота Леопольда</li>
+              <li>
+                1984 — Leopold the Cat in a Dream and in Reality / Кот Леопольд
+                во сне и наяву
+              </li>
+              <li>
+                1984 — Interview with Leopold the Cat / Интервью с котом
+                Лепольдом
+              </li>
+              <li>
+                1986 — Leopold the Cat's Polyclinic / Поликлиника кота Леопольда
+              </li>
+              <li>1987 — Leopold's Automobile / Автомобиль кота Леопольда</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <a
+        id="tribute-link"
+        href="https://www.imdb.com/title/tt1074757/"
+        target="_blank"
+      >
+        More video</a
+      >
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
